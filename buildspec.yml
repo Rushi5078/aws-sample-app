@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - curl -fsSL https://rpm.nodesource.com/setup_18.x | bash -
+      - yum install -y nodejs
+  build:
+    commands:
+      - npm install
+artifacts:
+  files:
+    - '**/*'
